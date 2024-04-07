@@ -34,9 +34,9 @@ namespace MergeSort
                 j++;
                 k++;
             }
-            for (i = lb; i <= ub; i++)
+            for (i = lb, k = 0; i <= ub; i++, ++k)
             {
-                arr[i] = merged[i - lb];
+                arr[i] = merged[k];
             }
         }
         void sort(int[] arr, int lb, int ub)
